@@ -71,9 +71,11 @@ const Home: React.FC = () => {
           )}
         </div>
       }
-      <Pagination 
+      {categoryId < 1 &&
+        <Pagination 
         onChangePage={onChangePage}
       />
+      }
     </div>
   )
 }

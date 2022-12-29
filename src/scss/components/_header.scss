@@ -9,15 +9,25 @@
     align-items: center;
     justify-content: space-between;
 
-    @media (max-width: 650px) {
+    @media (max-width: 1080px) {
       flex-direction: column;
+
+      input {
+        margin-bottom: 30px;
+      }
+    }
+
+    @media (max-width: 530px) {
+      input {
+        width: 300px;
+      }
     }
   }
 
   &__logo {
     display: flex;
 
-    @media (max-width: 650px) {
+    @media (max-width: 1080px) {
       margin-bottom: 30px;
     }
 
